@@ -8,15 +8,12 @@ Qjs
 				console.log('开始');
 				next();
 			},1000)
-		})
-		.then(function(next){
+		}).then(function(next){
 			console.log('马上执行');
 			next();
-		})
-		.delay(1000,function(){
+		}).delay(1000,function(){
 			 console.log('1s之后运行')
-		})
-		.then(function(next){
+		}).then(function(next){
 			console.log('马上执行');
 			next();
 		}).delay(1000,function(){
